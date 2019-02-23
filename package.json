@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A simple app that show github user info",
   "repository": "git@github.com:allyssonsantos/simple-github-app.git",
-  "contributors": ["Allysson dos Santos <aallysson0@gmail.com>"],
+  "author": "Allysson dos Santos <aallysson0@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "next": "^8.0.3",
