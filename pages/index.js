@@ -1,16 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import AppContext from '../providers/AppContext';
+import { AppConsumer } from '../providers/AppProvider';
 
-import Input from '../components/Input';
-import Button from '../components/Button';
+import GlobalStyle from '../components/GlobalStyle';
+import Form from '../components/Form';
+import Title from '../components/Title';
 
-const Home = () => (
-  <AppContext.Provider>
-    <Input />
-    <Button>Search</Button>
-  </AppContext.Provider>
-);
+class Home extends React.Component {
+  render() {
+    return (
+      <>
+        <GlobalStyle />
+        <Title>Simple github app</Title>
+        <Form />
+      </>
+    );
+  }
+}
 
 export default Home;
