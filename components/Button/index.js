@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import AppContext from '../../providers/AppContext';
 
 const StyledButton = styled.button``;
 
