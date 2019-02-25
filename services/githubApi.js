@@ -3,7 +3,7 @@ import fetch from 'isomorphic-unfetch';
 const getGitHubApiUrl = (username, type, page = 1) => {
   const internalUser = username ? `/${username}` : '';
   const internalType = type ? `/${type}` : '';
-  return `https://api.github.com/users${internalUser}${internalType}?per_page=${6}&page=${page}`;
+  return `https://api.github.com/users${internalUser}${internalType}?page=${page}`;
 };
 
 const getUserData = async username => {
@@ -22,4 +22,13 @@ const getUserRepos = async username => {
   return userRepos;
 };
 
-export { getGitHubApiUrl, getUserData, getUserRepos };
+const getRepoCommits = async (username, reponame, page = 1) => {
+  const res = await fetch(
+    `https://api.github.com/repos/${username}/${reponame}/commits?page=${page}`
+  );
+  const commits = await res.json();
+
+  return commits;
+};
+
+export { getGitHubApiUrl, getUserData, getUserRepos, getRepoCommits };

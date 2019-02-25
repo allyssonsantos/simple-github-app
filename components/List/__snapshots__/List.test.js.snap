@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Should match snapshot with childrens 1`] = `
+.c0 {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className=""
+  >
+    First Item
+  </li>
+  <li
+    className=""
+  >
+    Second Item
+  </li>
+</ul>
+`;
+
+exports[`With Snapshot Testing Should match snapshot without children 1`] = `
+.c0 {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+<ul
+  className="c0"
+/>
+`;

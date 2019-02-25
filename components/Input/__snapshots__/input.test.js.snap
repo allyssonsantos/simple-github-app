@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Should match snapshot with small prop 1`] = `
+.c0 {
+  border: 1px solid #999;
+  border-radius: 22px;
+  font-size: 16px;
+  height: 14px;
+  padding: 10px;
+}
+
+<input
+  className="c0"
+  placeholder="Insert github username"
+  type="text"
+/>
+`;
+
+exports[`With Snapshot Testing Should match snapshot without props 1`] = `
+.c0 {
+  border: 1px solid #999;
+  border-radius: 22px;
+  font-size: 18px;
+  height: 42px;
+  padding: 10px;
+}
+
+<input
+  className="c0"
+  placeholder="Insert github username"
+  type="text"
+/>
+`;

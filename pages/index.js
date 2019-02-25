@@ -1,18 +1,28 @@
 import React from 'react';
-
-import { AppConsumer } from '../providers/AppProvider';
+import styled from 'styled-components';
 
 import GlobalStyle from '../components/GlobalStyle';
+import Container from '../components/Container';
 import Form from '../components/Form';
 import Title from '../components/Title';
+
+const StyledContainer = styled(Container)`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+`;
 
 class Home extends React.Component {
   render() {
     return (
       <>
         <GlobalStyle />
-        <Title>Simple github app</Title>
-        <Form />
+        <StyledContainer>
+          <Title size="xlarge">Simple github app</Title>
+          <Form />
+        </StyledContainer>
       </>
     );
   }

@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RepoCard /> With Snapshot Testing Should match snapshot Header, Content and Footer children components 1`] = `
+.c1 {
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px #000;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 150px;
+  padding: 10px;
+}
+
+<article
+  className="c0"
+>
+  <header>
+    <h2
+      className="c1"
+      size="small"
+    >
+      Header
+    </h2>
+  </header>
+  <div>
+    Content
+  </div>
+  <footer
+    className="c2"
+  >
+    <span
+      className=""
+    >
+      Stars: 
+      10
+    </span>
+    <span
+      className=""
+    >
+      Last update: 
+      
+      /
+      
+      /
+      
+    </span>
+  </footer>
+</article>
+`;
+
+exports[`<RepoCard /> With Snapshot Testing Should match snapshot without compound components children 1`] = `
+.c0 {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px #000;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 150px;
+  padding: 10px;
+}
+
+<article
+  className="c0"
+>
+  This is a RepoCard
+</article>
+`;

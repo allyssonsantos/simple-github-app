@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component Snapshots Should match snapshot 1`] = `
+.c1 {
+  color: #000;
+  font-size: inherit;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.c4 {
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c3 {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px #000;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 150px;
+  padding: 10px;
+}
+
+.c0 {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 12px;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  grid-gap: 10px;
+}
+
+<div
+  className="c0"
+>
+  <h3
+    className="c1"
+  >
+    Repositories
+  </h3>
+  <main
+    className="c2"
+  >
+    <article
+      className="c3"
+      onClick={[Function]}
+    >
+      <header>
+        <h2
+          className="c4"
+          size="small"
+        >
+          test
+        </h2>
+      </header>
+      <div>
+        test description
+      </div>
+      <footer
+        className="c5"
+      >
+        <span
+          className=""
+        >
+          Stars: 
+          1
+        </span>
+        <span
+          className=""
+        >
+          Last update: 
+          01
+          /
+          14
+          /
+          2019
+        </span>
+      </footer>
+    </article>
+  </main>
+</div>
+`;

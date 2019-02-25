@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component Snapshots Should match snapshot 1`] = `
+.c0 {
+  border: 1px solid #999;
+  border-radius: 22px;
+  font-size: 18px;
+  height: 42px;
+  padding: 10px;
+}
+
+<form
+  onSubmit={[Function]}
+>
+  <input
+    className="c0"
+    name="search"
+    onChange={[Function]}
+    placeholder="Insert github username"
+    type="text"
+    value=""
+  />
+</form>
+`;
