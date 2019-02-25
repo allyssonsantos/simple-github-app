@@ -103,7 +103,6 @@ class RightPanel extends Component {
             isAtBottom,
             incrementRepoCommits,
           } = context;
-          console.log(commits);
           const repository = repos.filter(repo => selectedRepo === repo.id)[0];
           const filteredCommits = FilterCommits(this.state.value, commits);
           return (

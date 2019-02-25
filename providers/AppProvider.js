@@ -81,7 +81,6 @@ class AppProvider extends React.Component {
   };
 
   openRepo = async (id, username, reponame) => {
-    console.count('oi');
     const commits = await getRepoCommits(username, reponame);
     this.setSelectedRepo(id);
     this.setRepoCommits(commits);
