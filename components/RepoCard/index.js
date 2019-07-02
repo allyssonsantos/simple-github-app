@@ -15,20 +15,15 @@ const StyledCard = styled.article`
   padding: 10px;
 `;
 
-class RepoCard extends Component {
-  constructor(props) {
-    super(props);
-  }
+const RepoCard = ({ children, onClick, ...rest }) => (
+  <StyledCard onClick={onClick} {...rest}>
+    {children}
+  </StyledCard>
+);
 
-  static Header = Header;
-  static Content = Content;
-  static Footer = Footer;
-
-  render() {
-    const { children, onClick } = this.props;
-    return <StyledCard onClick={onClick}>{children}</StyledCard>;
-  }
-}
+RepoCard.Header = Header;
+RepoCard.Content = Content;
+RepoCard.Footer = Footer;
 
 RepoCard.displayName = 'RepoCard';
 RepoCard.Header.displayName = 'RepoCard.Header';

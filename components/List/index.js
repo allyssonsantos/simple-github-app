@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import Item from './sub-components/Item';
@@ -9,17 +9,10 @@ const StyledUl = styled.ul`
   padding-left: 0;
 `;
 
-class List extends Component {
-  constructor(props) {
-    super(props);
-  }
+const List = ({ children, ...rest }) => (
+  <StyledUl {...rest}>{children}</StyledUl>
+);
 
-  static Item = Item;
-
-  render() {
-    const { children, ...rest } = this.props;
-    return <StyledUl {...rest}>{children}</StyledUl>;
-  }
-}
+List.Item = Item;
 
 export default List;

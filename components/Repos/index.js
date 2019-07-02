@@ -19,14 +19,14 @@ const Grid = styled.main`
 
 const Repos = () => (
   <Wrapper>
-    <Title as="h3">Repositories</Title>
+    <Title as='h3'>Repositories</Title>
     <Grid>
       <AppConsumer>
         {context => {
           const {
             openRepo,
             userInfo: { login },
-            repos,
+            repos
           } = context;
 
           return repos.map(repo => {
@@ -35,13 +35,13 @@ const Repos = () => (
               name,
               description,
               stargazers_count: stars,
-              updated_at: updated,
+              updated_at: updated
             } = repo;
 
             return (
               <RepoCard
                 key={id}
-                onClick={async e => await openRepo(id, login, name)}
+                onClick={async () => await openRepo(id, login, name)}
               >
                 <RepoCard.Header>{name}</RepoCard.Header>
                 <RepoCard.Content>{description}</RepoCard.Content>

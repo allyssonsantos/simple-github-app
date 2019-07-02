@@ -1,16 +1,28 @@
 import styled from 'styled-components';
 import Theme from '../Theme';
 
+const {
+  colors: { secondary },
+  font: {
+    size: { small: smallFont, medium: mediumFont }
+  },
+  spacing: {
+    padding: { small: smallPadding }
+  }
+} = Theme;
+
 const Input = styled.input.attrs({
   type: 'text',
-  placeholder: 'Insert github username',
+  placeholder: 'Insert github username'
 })`
-  border: 1px solid ${Theme.colors.secondary};
   border-radius: 22px;
-  font-size: ${props =>
-    props.small ? Theme.font.size.small : Theme.font.size.medium};
-  height: ${props => (props.small ? '14px' : '42px')};
-  padding: ${Theme.spacing.padding.small};
+
+  ${({ small: smallProp }) => `
+    border: 1px solid ${secondary};
+    font-size: ${smallProp ? smallFont : mediumFont};
+    height: ${smallProp ? '14px' : '42px'};
+    padding: ${smallPadding};
+  `}
 `;
 
 export default Input;

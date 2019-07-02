@@ -14,18 +14,14 @@ const StyledContainer = styled(Container)`
   justify-content: center;
 `;
 
-class Home extends React.Component {
-  render() {
-    return (
-      <>
-        <GlobalStyle />
-        <StyledContainer>
-          <Title size="xlarge">Simple github app</Title>
-          <Form />
-        </StyledContainer>
-      </>
-    );
-  }
-}
+const Home = () => (
+  <>
+    <GlobalStyle />
+    <StyledContainer>
+      <Title size='xlarge'>Simple github app</Title>
+      <Form />
+    </StyledContainer>
+  </>
+);
 
 export default Home;

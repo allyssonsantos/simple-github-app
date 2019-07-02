@@ -5,16 +5,12 @@ import UserInfo from '../components/UserInfo';
 import Repos from '../components/Repos';
 import RightPanel from '../components/RightPanel';
 
-class User extends Component {
-  render() {
-    return (
-      <Container>
-        <UserInfo />
-        <Repos />
-        <RightPanel />
-      </Container>
-    );
-  }
-}
+const User = () => (
+  <Container>
+    <UserInfo />
+    <Repos />
+    <RightPanel />
+  </Container>
+);
 
 export default User;
