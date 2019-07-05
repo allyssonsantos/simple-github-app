@@ -92,7 +92,6 @@ class AppProvider extends React.Component {
 
     this.setUserInfo(userInfo);
     this.setUserRepos(reposInfo);
-    Router.push('/user');
   };
 
   render() {

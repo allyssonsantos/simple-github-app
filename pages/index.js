@@ -18,7 +18,7 @@ const Home = () => (
   <>
     <GlobalStyle />
     <StyledContainer>
-      <Title size='xlarge'>Simple github app</Title>
+      <Title size="xlarge">Simple github app</Title>
       <Form />
     </StyledContainer>
   </>

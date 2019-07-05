@@ -28,29 +28,34 @@ const StyledList = styled(List)`
   grid-area: infos;
 `;
 
-const UserInfo = () => (
-  <Wrapper>
-    <AppConsumer>
-      {context => {
-        const {
-          userInfo: { avatar_url, name, company, location, email, blog },
-        } = context;
+const UserInfo = ({ username }) => {
+  return (
+    <Wrapper>
+      <AppConsumer>
+        {context => {
+          const { userInfo, searchUser } = context;
+          if (!Object.keys(userInfo).length) {
+            searchUser(username);
+          }
 
-        return (
-          <>
-            <Image src={avatar_url} />
-            <Title size="small">{name}</Title>
-            <StyledList>
-              <List.Item>Work at: {company}</List.Item>
-              <List.Item>From: {location}</List.Item>
-              <List.Item>Email: {email}</List.Item>
-              <List.Item>Website: {blog}</List.Item>
-            </StyledList>
-          </>
-        );
-      }}
-    </AppConsumer>
-  </Wrapper>
-);
+          const { avatar_url, name, company, location, email, blog } = userInfo;
+
+          return (
+            <>
+              <Image src={avatar_url} />
+              <Title size="small">{name}</Title>
+              <StyledList>
+                <List.Item>Work at: {company}</List.Item>
+                <List.Item>From: {location}</List.Item>
+                <List.Item>Email: {email}</List.Item>
+                <List.Item>Website: {blog}</List.Item>
+              </StyledList>
+            </>
+          );
+        }}
+      </AppConsumer>
+    </Wrapper>
+  );
+};
 
 export default UserInfo;
